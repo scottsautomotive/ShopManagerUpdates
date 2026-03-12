@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+    <version>1.0.6.0</version>
+    <url>PASTE_YOUR_MSI_LINK_HERE</url>
+    <changelog>https://github.com/scottsautomotive/ShopManagerUpdates/releases</changelog>
+    <mandatory>false</mandatory>
+</item>
