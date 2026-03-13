@@ -2,6 +2,6 @@
 <item>
     <version>1.0.7</version>
     <url>https://github.com/scottsautomotive/ShopManagerUpdates/releases/download/v1.0.7/autoshopmanager_setup.exe</url>
-    <changelog>https://github.com/scottsautomotive/ShopManagerUpdates/releases</changelog>
+    <changelog>https://raw.githubusercontent.com/scottsautomotive/ShopManagerUpdates/refs/heads/main/ChangeLog.txt</changelog>
     <mandatory>false</mandatory>
 </item>
