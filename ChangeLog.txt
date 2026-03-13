@@ -1,6 +1,6 @@
-v1.0.7
--Added Vendor sidebar link
--Added Vendor view
--Added Licensing Info to Software and Licensing section in Settings view
--Added Activate License button to Software and Licensing section in Settings view
--Added License registration email
+Version 1.0.7 Update
+--------------------
+- Added brand new Supplier Directory interface.
+- Integrated fully secure local License Key activation.
+- Removed dependency on Visual Studio Installer.
+- Performance improvements and bug fixes.
