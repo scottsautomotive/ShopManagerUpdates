@@ -1,5 +1,8 @@
 Version 1.0.8 Release Notes 3/13/2026
 ---------------------------
+🚀 New Features
+Shop Operating Hours: Added a comprehensive 7-day scheduling matrix to the Settings menu, allowing shop owners to define specific opening and closing times for each day of the week.
+
 ✨ Improvements & UI/UX
 Smart Appointment Scheduling: Completely overhauled the time-selection interface for new appointments. Manual time typing has been replaced with dynamic, 30-minute increment dropdown menus that automatically calculate the shop's open/close hours for the selected date.
 Calendar Agenda Navigation: Added "Go to Today" and "View All Upcoming" buttons to the Scheduling board to prevent visual confusion when booking appointments for future dates.
@@ -16,8 +19,6 @@ Version 1.0.7 Release Notes 3/12/2026
 --------------------
 🚀 New Features
 Supplier Directory System: Built a brand new Supplier management dashboard. Users can now view, add, edit, and delete local parts suppliers using a modern card-based interface with one-click website launching.
-Shop Operating Hours: Added a comprehensive 7-day scheduling matrix to the Settings menu, allowing shop owners to define specific opening and closing times for each day of the week.
-Web Part Importer (Beta): Introduced a built-in web browser tool using WebView2. Users can navigate to supplier websites, highlight text, and use extraction buttons to instantly pull Part Names, Numbers, and Costs directly into the software.
 
 🛡️ Security & Licensing
 Secure Local License Activation: Fully integrated a robust, hardware-locked licensing system. The application now generates a unique Hardware ID and validates license keys entirely locally. This provides instant activation feedback, tracks exact expiration dates, and firmly secures the software against unauthorized distribution.
