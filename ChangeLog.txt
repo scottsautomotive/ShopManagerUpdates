@@ -1,6 +1,30 @@
-Version 1.0.7 Update
+Version 1.0.8 Release Notes 3/13/2026
+---------------------------
+✨ Improvements & UI/UX
+Smart Appointment Scheduling: Completely overhauled the time-selection interface for new appointments. Manual time typing has been replaced with dynamic, 30-minute increment dropdown menus that automatically calculate the shop's open/close hours for the selected date.
+Calendar Agenda Navigation: Added "Go to Today" and "View All Upcoming" buttons to the Scheduling board to prevent visual confusion when booking appointments for future dates.
+Licensing Dashboard Redesign: Overhauled the Licensing section in Settings. It now features a dedicated "Activate" button, real-time visual status indicators, exact expiration date tracking, and a one-click support email link.
+Smart Dropdown Auto-Selection: When creating a new Customer from within the "Add Vehicle" window, the system now automatically finds and selects the newly created customer upon returning to the vehicle screen.
+Streamlined Update Prompts: The automatic updater now displays clean, professional release notes instead of routing users to the raw GitHub repository directory.
+
+🔧 Bug Fixes & Stability
+Strict Duplicate Prevention: Hardened the database entry points. The system now actively scans and blocks the creation of duplicate Vehicles (by VIN), Customers (by Name & Phone combination), and Inventory Parts (by Part Number).
+Relational Data Integrity: Removed the ability to permanently delete vehicles from the Active Vehicles list. This protects the database from corruption and prevents old Work Orders and Financial Records from becoming orphaned.
+"Snapshot Cache Trap" Resolved: Fixed a critical data-grid refresh issue where rapidly saving nested entries (Customer -> Vehicle -> Appointment) caused Entity Framework to display a stale cache. The UI now forces a hard disk read and flushes the SQLite connection pool instantly upon saving.
+
+Version 1.0.7 Release Notes 3/12/2026
 --------------------
-- Added brand new Vendor Directory interface.
-- Integrated fully secure local License Key activation.
-- Removed dependency on Visual Studio Installer.
-- Performance improvements and bug fixes.
+🚀 New Features
+Supplier Directory System: Built a brand new Supplier management dashboard. Users can now view, add, edit, and delete local parts suppliers using a modern card-based interface with one-click website launching.
+Shop Operating Hours: Added a comprehensive 7-day scheduling matrix to the Settings menu, allowing shop owners to define specific opening and closing times for each day of the week.
+Web Part Importer (Beta): Introduced a built-in web browser tool using WebView2. Users can navigate to supplier websites, highlight text, and use extraction buttons to instantly pull Part Names, Numbers, and Costs directly into the software.
+
+🛡️ Security & Licensing
+Secure Local License Activation: Fully integrated a robust, hardware-locked licensing system. The application now generates a unique Hardware ID and validates license keys entirely locally. This provides instant activation feedback, tracks exact expiration dates, and firmly secures the software against unauthorized distribution.
+
+🚀 Architecture & Deployment
+Standalone Update Engine: Completely removed the dependency on the bulky Visual Studio Installer. The software now utilizes a lightweight, self-contained auto-updater that pulls down the latest versions directly from your repository. This results in faster, seamless, "one-click" installations with zero external dependencies for your users.
+
+⚡ Performance & Stability
+Core System Optimization: Overhauled the underlying data pipeline to significantly reduce memory footprint and speed up database read/write times.
+General Bug Fixes: Patched various UI rendering quirks, smoothed out screen-to-screen navigation transitions, and fortified the application's overall stability during extended daily use.
