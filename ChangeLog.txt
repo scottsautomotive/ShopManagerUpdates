@@ -1,5 +1,21 @@
+Version 1.0.9 Release Notes 3/14/2026
+--------------------------------------
+📅 Scheduling & Appointments
+Smart Time Auto-Selection: The New Appointment window is now context-aware. When booking a same-day appointment, the system automatically calculates the current time, references your shop's operating hours, and intelligently snaps to the next available half-hour slot to save you from endless scrolling.
+Live Search Dropdowns: Upgraded the Customer/Vehicle selection menus with real-time text filtering. Typing a customer's name or vehicle make instantly narrows down massive databases for lightning-fast selection.
+
+📝 Work Order Management
+Seamless Invoice Finalization: Completely overhauled the invoice finalization pipeline. Finalizing a Work Order now instantly deducts inventory, locks the editor UI, and updates the status to "Invoiced" on-screen without requiring a forced page refresh or sending the user away from the document.
+Intelligent Date Validation: Hardened the Work Order date selectors. The system now physically prevents users from accidentally logging a "Date Out" (completion date) that occurs prior to the vehicle's "Date In".
+Universal Live Search: Brought the same rapid live-search text filtering to the Work Order editor, making it easier than ever to assign vehicles to new repair orders.
+
+📦 Inventory & Labor Catalog
+Quick-Add Inventory: Introduced a rapid "+1 Stock" button directly to the main Parts Catalog grid. This allows service writers to instantly receive and increment stock for common items (like oil filters or fluids) with a single click, completely bypassing the edit window.
+Catalog Deletion & Safety Locks: Shop managers can now permanently delete obsolete Parts and Labor rates from the master catalogs via a new trash can interface.
+Financial Integrity Protection: Added a strict background safety net to the deletion tool. The system actively scans past records and will automatically block the deletion of any Part or Labor code that is tied to a finalized historical invoice, ensuring your financial reporting is never corrupted.
+
 Version 1.0.8 Release Notes 3/13/2026
----------------------------
+--------------------------------------
 🚀 New Features
 Shop Operating Hours: Added a comprehensive 7-day scheduling matrix to the Settings menu, allowing shop owners to define specific opening and closing times for each day of the week.
 
@@ -16,7 +32,7 @@ Relational Data Integrity: Removed the ability to permanently delete vehicles fr
 "Snapshot Cache Trap" Resolved: Fixed a critical data-grid refresh issue where rapidly saving nested entries (Customer -> Vehicle -> Appointment) caused Entity Framework to display a stale cache. The UI now forces a hard disk read and flushes the SQLite connection pool instantly upon saving.
 
 Version 1.0.7 Release Notes 3/12/2026
---------------------
+----------------------------------------
 🚀 New Features
 Supplier Directory System: Built a brand new Supplier management dashboard. Users can now view, add, edit, and delete local parts suppliers using a modern card-based interface with one-click website launching.
 
