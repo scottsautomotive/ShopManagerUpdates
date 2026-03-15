@@ -1,3 +1,22 @@
+Version 1.1.0 Release Notes 3/15/2026
+---------------------------------------
+🎨 UI & Navigation Upgrades
+Streamlined Startup Flow: The application now immediately boots into the ActiveShopBoardView instead of the Dashboard, getting service writers right into the action the second the app opens.
+Sidebar Reorganization: The sidebar menu has been optimized for a live shop workflow. The Active Shop Board has been pinned to the very top for priority access.
+Analytics Tab: Renamed the "Dashboard" to Analytics and repositioned it directly above the Accounting tab to logically group your financial and reporting tools together.
+
+💻 Network & Multi-Workstation Support
+Local Area Network (LAN) Ready: The software can now be deployed across multiple computers in the shop. By dropping a simple db_network_config.txt file into the app data folder, extra workstations will automatically route their connection to a shared master database.
+Hardware License Decoupling: Rearchitected the licensing system. License keys are now stored locally on each physical machine rather than inside the shared database, allowing multiple activated PCs to read from the exact same shop data without overriding each other's activation keys.
+Database Collision Armor: Upgraded the SQLite connection pipeline with Cache=Shared and a 15-second busy timeout. If the Front Desk and the Shop Floor hit "Save" at the exact same millisecond, the software now intelligently forms a queue to prevent "Database Locked" crashes.
+
+📝 Work Order & Data Integrity
+Smart Mileage Prompts: When generating a brand new Repair Order, the editor now creates a dynamic pop-up asking the user to confirm or update the vehicle's incoming mileage, automatically highlighting the text for rapid data entry.
+Finalize Validation (Mileage Out): Added strict guardrails to the invoice finalization process. The system now actively checks the "Mileage Out" field. If it is blank, a pop-up forces the user to enter the departing mileage and will safely block the finalization process until a valid number is provided.
+
+⏱️ Labor Catalog
+Quick Rate Overrides: Redesigned the Add/Edit Labor Rate window. The Hourly Rate box has been streamlined and now features a dedicated Pencil "Edit" button. Clicking the button instantly unlocks the field, changes the styling, and highlights the text so you can quickly override the shop's global default rate for specific specialized jobs.
+
 Version 1.0.9 Release Notes 3/14/2026
 --------------------------------------
 📅 Scheduling & Appointments
