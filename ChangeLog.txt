@@ -1,3 +1,11 @@
+Version 1.1.0.1 Release Notes 3/15/2026 
+----------------------------------------
+🛡️ Security & Licensing
+Updated license check on startup to pull from new location.
+
+✨ Improvements & UI/UX
+Restored full screen no border start up
+
 Version 1.1.0 Release Notes 3/15/2026
 ---------------------------------------
 🎨 UI & Navigation Upgrades
