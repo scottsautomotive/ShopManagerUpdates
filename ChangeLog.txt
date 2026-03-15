@@ -1,6 +1,11 @@
 Version 1.1.0.1 Release Notes 3/15/2026 
 ----------------------------------------
 🛡️ Security & Licensing
+Fixed license check navigation lock.
+
+Version 1.1.0.1 Release Notes 3/15/2026 
+----------------------------------------
+🛡️ Security & Licensing
 Updated license check on startup to pull from new location.
 
 ✨ Improvements & UI/UX
