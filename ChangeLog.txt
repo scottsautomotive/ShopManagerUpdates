@@ -1,7 +1,7 @@
 Version 1.1.0 Release Notes 3/15/2026
 ---------------------------------------
 🎨 UI & Navigation Upgrades
-Streamlined Startup Flow: The application now immediately boots into the ActiveShopBoardView instead of the Dashboard, getting service writers right into the action the second the app opens.
+Streamlined Startup Flow: The application now immediately boots into the Active Shop Board instead of the analytics Dashboard, getting service writers right into the action the second the app opens.
 Sidebar Reorganization: The sidebar menu has been optimized for a live shop workflow. The Active Shop Board has been pinned to the very top for priority access.
 Analytics Tab: Renamed the "Dashboard" to Analytics and repositioned it directly above the Accounting tab to logically group your financial and reporting tools together.
 
