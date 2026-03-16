@@ -1,3 +1,30 @@
+🚀 Auto Shop Manager Pro - Changelog v1.1.1 (The Network & Security Update)
+-------------------------------------------------------------------------------
+🔐 Security & User Management
+New Startup Login Screen: The application now launches to a secure, modern login screen requiring an employee selection and PIN.
+Role-Based Access Control (RBAC): Implemented strict UI permissions based on user roles:
+Admins have full access to the software.
+Service Writers can view inventory and build estimates, but cannot access the Financial Dashboard, Accounting Exports, or Shop Settings.
+Technicians are restricted to the Active Shop Board, Work Orders, and Vehicle History.
+Employee Management Dashboard: Added a new section inside Settings to create, edit, and delete employee accounts and assign roles.
+Touch-Friendly Security Pad: Replaced standard Windows password popups with a custom, ATM-style numeric touch pad. Includes an invisible keyboard listener so you can type on a physical NumPad without clicking.
+Secure Deletions: The Master Security Pad now protects the deletion of Customers, Work Orders, Parts, Labor Rates, and Database Restores.
+
+✨ UI & User Experience (UX) Polish
+"Toast" Notifications: Replaced disruptive, screen-freezing "Save Successful" pop-ups with sleek, modern green/red banners that slide up from the bottom corner and auto-fade after 3 seconds.
+Modern Scrollbars: Ripped out the blocky legacy Windows scrollbars globally. Replaced them with slim, rounded, Mac/Web-style scrollbars that gently darken when hovered or dragged.
+Vector Icons Upgrade: Replaced all text-based emojis with professional, scalable vector icons (MahApps.Metro.IconPacks). The sidebar, delete buttons, edit buttons, and Quick-Add buttons now scale perfectly and match the color theme flawlessly.
+Empty State Watermarks: Empty lists (like a customer with no history or an empty search result) no longer show a blank white void. They now display a beautiful "No records found" watermark with a magnifying glass icon.
+Smart Editor Locking: The Work Order Editor (including the PDF Preview and Print buttons) is now completely disabled and locked down with a red warning until a vehicle is actively selected.
+Smart Check-In Flow: Checking a vehicle in directly from the Scheduling screen now triggers the dynamic "Mileage In" prompt properly, matching the "New Work Order" behavior.
+
+🛠️ Network & Database Stability
+Live Network Syncing: Implemented 15-second background refresh timers (DispatcherTimer) and read-only database tracking (.AsNoTracking()) across all major grids (Active Shop Board, Work Orders, Inventory, Customers). Screens now stay perfectly in sync across different computers without manual refreshing.
+Ghost Draft Eradication: Fixed an issue where backing out of a "New Work Order" left a blank ticket in the database. The software now actively sweeps and deletes abandoned ghost drafts.
+Phantom Lock Cleanup: The application now actively sweeps the database on startup to clear any stuck concurrency locks left behind by power outages or app crashes.
+"Split-Brain" Prevention: Added strict Network Guards to prevent laptops from silently creating fake local databases on their C: drive if they temporarily lose Wi-Fi connection to the master PC.
+Zombie Record Prevention: Fixed an issue where clicking a Work Order that was recently deleted by another computer resulted in a dead click.
+
 Version 1.1.0.2 Release Notes 3/15/2026 
 ----------------------------------------
 🛡️ Security & Licensing
