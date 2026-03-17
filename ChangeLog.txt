@@ -1,3 +1,47 @@
+🚀 Auto Shop Pro - Changelog v1.2.0 (The Documentation & Network Polish Update)
+🧠 Application Stability & Architecture
+Single Instance Lock (Mutex): Implemented a core application lock to prevent multiple instances of Auto Shop Pro from running simultaneously on the same computer, preventing database collisions and memory crashes.
+
+Smart Database Routing: Upgraded the ShopDbContext engine to intelligently route database connections.
+
+Main PC: Automatically defaults to the highly stable C:\ShopManagerShare\ShopManagerDB.db.
+
+Shop Laptops: Automatically reads the local db_network_config.txt to seamlessly connect over Wi-Fi.
+
+License Key Extractor: Built a raw SQLite extraction protocol to ensure licensing remains valid and intact when migrating physical database files.
+
+📖 Built-In Shop Manual
+Interactive Help Dashboard: Added a comprehensive, built-in digital manual accessible from the main navigation sidebar.
+
+Non-Blocking Window Logic: The Help Manual now opens as a floating, side-by-side window, allowing users to read instructions while actively typing and working in the main application.
+
+Extensive Documentation: Wrote full, step-by-step guides for:
+
+System Basics, Security Roles, and Network Syncing.
+
+Creating, processing, and finalizing Work Orders.
+
+Using the Active Shop Board and Appointments system.
+
+Managing Customers, Vehicles, Parts, Labor, and Vendors.
+
+Using the Analytics Dashboard, Accounting exports, and Shop Settings.
+
+⚙️ IT & Network Setup Tools
+1-Click Network Configuration: Added intelligent setup tools directly to the Settings screen to assist with multi-PC deployments.
+
+Open Local Config File: Instantly auto-generates a template connection string and opens it in Notepad for easy editing on client laptops.
+
+Open Active DB Folder: Interrogates the system to find the exact active database location and opens the folder in Windows Explorer for rapid network sharing.
+
+Step-by-Step IT Guide: Added a dedicated "Multi-PC Network Setup Guide" to the Help Manual, complete with specific instructions for clearing Windows 10 "Password Protected Sharing" blocks.
+
+🎨 UI & UX Polish
+Settings Page Overhaul: Reorganized the Settings layout, moving the Backup, Restore, PIN, and new Network Setup tools into a clean, unified "Database & Security Tools" section at the bottom of the right-hand column.
+
+WPF Rendering Fixes: Resolved top-to-bottom XAML resource loading issues and added proper <Border> containers to ensure consistent padding and layout rendering.
+
+---------------------------------------------------------------------
 🚀 Auto Shop Pro - Changelog v1.1.2.2 (Single Instance)
 🔧 Bug Fixes & Stability
 Users can no longer start multiple instances.
