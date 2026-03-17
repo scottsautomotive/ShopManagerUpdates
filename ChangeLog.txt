@@ -1,3 +1,35 @@
+🚀 Auto Shop Pro - Changelog v1.1.2 (The UX & Navigation Update)
+👤 New User Session Management
+Sidebar Profile Card: Added a sleek, dark-themed User Badge at the top of the navigation menu. It dynamically displays the logged-in employee’s name and system role.
+
+Switch User / Log Out: Added high-access buttons to the sidebar for instant session switching. This allows technicians and service writers to swap seats securely without restarting the application.
+
+Auto-Login Cleanup: The session manager now explicitly clears all user data upon logout, ensuring the PIN pad is required for the next user.
+
+🚗 Vehicle Management & Security
+Secure Vehicle Deletion: Tied the Vehicle "Delete" action into the Master PIN system. Removing a vehicle from the shop records now requires Admin/Owner authorization.
+
+Cleanup of Legacy Undo Logic: Removed the clunky "Undo" timed bar in favor of the more secure PIN-authorized deletion process and sleek Toast Notifications.
+
+Vehicle Selection Lock: Implemented a "Safety First" lock on the Work Order Editor. All inputs, including PDF Previews and Printing, are now strictly disabled until a vehicle is assigned to the ticket.
+
+🔄 Intelligent Data Refresh (Networking)
+Sort-Preservation Logic: Upgraded the LoadWorkOrders engine to "remember" your current view. When the 15-second background network refresh triggers, the software now:
+
+Snapshots your current column sort (e.g., sorting by Date or Customer Name).
+
+Pulls the fresh data from the network.
+
+Re-applies your sort and restores the visual "Up/Down" arrows on the column headers.
+
+Visual Watermarks: Finalized the Empty State system. DataGrids across the app (Inventory, Customers, Vehicles) now show a professional "No Records Found" watermark when search results are empty.
+
+🎨 Final UI Polish
+Vector Icon Integration: Completed the removal of all text-based emojis in the Vehicle and Work Order lists, replacing them with crisp, color-matched Material Design icons.
+
+Toast Success Feedback: Integrated the new animation-driven notification system into the vehicle deletion and work order saving workflows.
+
+
 🚀 Auto Shop Manager Pro - Changelog v1.1.1 (The Network & Security Update)
 -------------------------------------------------------------------------------
 🔐 Security & User Management
