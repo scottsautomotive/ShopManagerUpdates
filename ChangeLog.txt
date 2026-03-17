@@ -1,5 +1,10 @@
-🚀 Auto Shop Pro - Changelog v1.1.2.1 (Bugfix)
-👤 Minor bug fix with user login
+🚀 Auto Shop Pro - Changelog v1.1.2.2 (Single Instance)
+🔧 Bug Fixes & Stability
+Users can no longer start multiple instances.
+
+---------------------------------------------------------------------
+🚀 Auto Shop Pro - Changelog v1.1.2.1 (Login Bugfix)
+🔧 Bug Fixes & Stability
 
 ---------------------------------------------------------------------
 🚀 Auto Shop Pro - Changelog v1.1.2 (The UX & Navigation Update)
