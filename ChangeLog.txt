@@ -1,3 +1,27 @@
+---------------------------------------------------------------------
+🚀 Auto Shop Pro - Release Notes
+Update: The "Inventory & Supplier Portal" Expansion (v2.2)
+
+🌐 The Split-Screen Supplier Portal
+Embedded Web Engine: Integrated Microsoft WebView2 (Chromium) directly into the application. Service writers can now browse external supplier catalogs (AutoZone, NAPA, O'Reilly, etc.) inside a split-screen window without ever opening a separate web browser.
+
+Smart Grab Technology: Added a custom JavaScript text-extraction engine. Users can now highlight a Part Number, Part Name, or Description on a supplier's website and click a dedicated "Copy" icon to instantly pull that text directly into the database form.
+
+Dynamic Supplier Linking: The portal automatically ties new inventory items to their respective suppliers. Users can select existing suppliers from a dropdown (which instantly navigates to their URL) or type a new supplier name to save them to the database on the fly.
+
+Browser Navigation: Added fully functional Back and Forward buttons to the internal browser to easily navigate through search results and part categories.
+
+🛡️ Data Integrity & Safety Locks
+Duplicate Inventory Guard: The Supplier Portal now runs a live database check before saving a new part. If a user attempts to save a part number that already exists in the system, the save is blocked and a warning is issued to prevent inventory clutter.
+
+Manual Financials: Removed the "Smart Grab" feature for the Cost and Retail fields. To prevent catastrophic pricing errors caused by invisible HTML tags or superscripted retail website formatting, all financial data entry remains strictly manual.
+
+Automated Markup Engine: Tied the Supplier Portal into the global ShopSettings. As soon as a service writer types in their Cost, the Retail Price is instantly calculated based on the shop's customized tiered markup percentages.
+
+🚘 VIN Engine Polish
+NHTSA String Scrubbing: Updated the JSON parsing logic in the VIN Decoder to strip out awkward government terminology. Engine configurations now read cleanly (e.g., automatically converting "5.0L V-Shaped8" to standard industry formatting: "5.0L V8").
+
+---------------------------------------------------------------------
 🚀 Auto Shop Pro - Release Notes
 Update: The "Diagnostic & Skill Routing" Patch (v2.1)
 
