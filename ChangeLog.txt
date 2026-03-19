@@ -1,4 +1,27 @@
 🚀 Auto Shop Pro - Release Notes
+Update: The "Diagnostic & Skill Routing" Patch (v2.1)
+
+📊 Active Shop Board Expansion (Kanban)
+New "In Diagnostic" Lane: Upgraded the Active Shop Board from 4 lanes to a full 5-lane Kanban workflow. A dedicated purple "In Diagnostic" column now sits between Estimates and In Progress.
+
+Streamlined Routing: Vehicles in the diagnostic phase are now visually separated from vehicles currently undergoing wrench-time (In Progress), giving service writers a more accurate view of shop capacity.
+
+🛠️ Technician Workflow & Security
+Diagnostic Tech Notes: The Work Order Editor now intelligently recognizes the "In Diagnostic" status (Status 5) and keeps the Technician Notes text box unlocked, allowing mechanics to log their findings before the job officially moves to "In Progress."
+
+Dashboard Sync: Updated the Technician Dashboard query engine. Cars flagged as "In Diagnostic" now properly route to the technician's Active Jobs grid alongside standard active repairs.
+
+Skill-Based Job Routing: The Work Order Editor now strictly filters the "Assigned Tech" dropdown based on the A/B/C skill level required for that specific labor line. Service writers can no longer accidentally assign Master-level diagnostics to a C-Tech.
+
+📋 Labor Catalog & Inventory
+Catalog Skill Assignment: The "Add/Edit Labor" window now includes a RequiredSkillLevel dropdown (A-Tech, B-Tech, C-Tech, or None), mapping permanent requirements to standard shop jobs.
+
+Skill Transparency: Added a new purple "Skill Req." column directly to the Labor Catalog DataGrid so managers can verify job constraints at a glance.
+
+Smart Catalog Search: The Labor Catalog search bar has been upgraded to scan by Skill Level. Typing "A-Tech" will instantly filter the catalog to show only master-level procedures.
+
+---------------------------------------------------------------------
+🚀 Auto Shop Pro - Release Notes
 Update: The "Shop Floor & Payroll" Expansion (v2.0)
 
 🛠️ The Technician Workflow
