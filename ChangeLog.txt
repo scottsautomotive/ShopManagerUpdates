@@ -1,3 +1,37 @@
+🚀 Auto Shop Pro - Release Notes
+Update: The "Shop Floor & Payroll" Expansion (v2.0)
+
+🛠️ The Technician Workflow
+Labor Line Assignments: Shifted from assigning entire Work Orders to assigning individual labor lines. An A-Tech and a C-Tech can now clock different jobs on the exact same ticket.
+
+The "Tech Blindfold" (Role-Based Security): Technicians have a completely locked-down view. When logged in, they can no longer see shop financials, parts costs, labor rates, tax totals, or front-office tabs (Customers, Appointments, Accounting). They see only the vehicles in their bay and the work they need to perform.
+
+Technician Dashboard: Added a dedicated, gamified dashboard for technicians. Techs can instantly view their active assignments, completed jobs, and live "Flagged Hours" for the current week.
+
+Printable Tech Sheets: Added a dedicated print button for clean, stripped-down physical work orders for mechanics to take to the bay.
+
+⏱️ HR & Master Payroll
+Expanded HR Profiles: The User database now tracks advanced employee metrics, including SkillLevel (A, B, C, None), PayType (Hourly, Flat Rate, Salary), StandardHourlyRate, and FlatRateHourly.
+
+Universal Time Clock: Added a persistent "Clock In / Clock Out" toggle directly to the main sidebar, allowing hourly and salary employees to track physical time in the building.
+
+Master Payroll Report: Built a comprehensive back-office dashboard that automatically calculates total shop payroll. It pulls physical time punches for hourly staff, cross-references completed Work Orders for Flat Rate technicians, and generates precise gross pay calculations based on individual HR profiles.
+
+📋 Intake & Front Desk
+NHTSA VIN Decoding: Integrated a live REST API connection to the US Department of Transportation. Service writers can now click "Decode" to automatically pull Year, Make, Model, and Engine data from any 17-digit VIN.
+
+Active Shop Board Expansion: Added an orange "On Hold / Waiting on Parts" lane to the Kanban board. Technicians can now digitally flag a ticket as stalled, instantly routing it to the front desk.
+
+Vehicle Quirks & Notes: Added a persistent notes field to the Vehicle Profile for tracking specific customer warnings (e.g., "Driver door sticks," "Needs synthetic oil").
+
+✨ Quality of Life Improvements
+Live Data Refresh: The Active Shop Board and Work Order List now silently auto-refresh in the background every 15 seconds, keeping the front desk and the shop floor perfectly in sync without locking up the UI.
+
+Smooth Scrolling: Fixed a global UI bug where hovering over a DataGrid or TextBox would trap the user's mouse wheel and prevent the main window from scrolling.
+
+Check-In Mileage Trap: The Work Order editor now dynamically prompts the service writer to enter the check-in mileage the very first time they open a newly created ticket.
+
+---------------------------------------------------------------------
 🚀 Auto Shop Pro - Changelog v1.3.0 (The UX & Consolidation Update)
 🧹 UI/UX Polish & Screen Consolidation
 Financial Command Center: Completely merged the FinancialDashboardView and TaxAccountingReportView into a single, highly powerful "Accounting" tab. It now displays high-level KPI cards, raw expense ledgers, and tax breakdowns all dynamically driven by a single date-range selector.
