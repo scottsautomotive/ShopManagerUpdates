@@ -1,5 +1,28 @@
----------------------------------------------------------------------
-🚀 Auto Shop Pro - Release Notes
+--------------------------------🚀 Auto Shop Pro - Release Notes-------------------------------------
+Update: The "Workflow Architecture & Smart Alerts" Expansion (v2.3)
+
+🏗️ Complete UI/UX Workflow Restructure
+Role-Based Work Zones: Reorganized the application out of rigid "database tables" and into logical, workflow-driven zones to eliminate unnecessary clicking and tab-switching.
+
+The Procurement Zone (Inventory): Physical parts now live directly beneath a sleek, horizontal scrolling carousel of your Parts Vendors. Clicking a vendor card seamlessly launches the custom split-screen Chromium Supplier Portal to hunt for parts.
+
+The Service Zone (Labor & Guides): Labor rates now live directly beneath a horizontal carousel of your Diagnostic Guides (ProDemand, AllData, Identifix, etc.). Clicking a guide instantly opens your computer's standard default browser to look up repair procedures and quote times.
+
+Database Auto-Healing: Added a seamless startup script that scans the database and automatically migrates all legacy supplier data into the new "Vendor" category, ensuring zero data loss during the transition.
+
+🚨 Smart Low-Stock Alert System
+Floating Background Widget: Built a smart, borderless widget that silently monitors your inventory levels in the background every 30 seconds.
+
+Role-Restricted Popups: The widget automatically detects who is logged in. It will actively pop up in the top-right corner to warn Managers and Service Writers about low stock, but remains completely hidden for Technicians to prevent distractions.
+
+Snooze Functionality: Added a 5-minute snooze button to dismiss the alert while you finish writing up a ticket.
+
+🪄 The "Teleporter" Integration
+Exact URL Memory: The database now memorizes the exact webpage URL of any part saved through the Supplier Portal.
+
+One-Click Ordering: When a part triggers a Low Stock alert, clicking the "Order" button on the widget instantly launches the Supplier Portal and teleports you exactly to that specific part's webpage (e.g., directly to the specific Duralast alternator page). No more re-searching for parts you already found once!
+
+---------------------------------🚀 Auto Shop Pro - Release Notes------------------------------------
 Update: The "Inventory & Supplier Portal" Expansion (v2.2)
 
 🌐 The Split-Screen Supplier Portal
@@ -21,8 +44,7 @@ Automated Markup Engine: Tied the Supplier Portal into the global ShopSettings. 
 🚘 VIN Engine Polish
 NHTSA String Scrubbing: Updated the JSON parsing logic in the VIN Decoder to strip out awkward government terminology. Engine configurations now read cleanly (e.g., automatically converting "5.0L V-Shaped8" to standard industry formatting: "5.0L V8").
 
----------------------------------------------------------------------
-🚀 Auto Shop Pro - Release Notes
+----------------------------------🚀 Auto Shop Pro - Release Notes-----------------------------------
 Update: The "Diagnostic & Skill Routing" Patch (v2.1)
 
 📊 Active Shop Board Expansion (Kanban)
@@ -44,8 +66,7 @@ Skill Transparency: Added a new purple "Skill Req." column directly to the Labor
 
 Smart Catalog Search: The Labor Catalog search bar has been upgraded to scan by Skill Level. Typing "A-Tech" will instantly filter the catalog to show only master-level procedures.
 
----------------------------------------------------------------------
-🚀 Auto Shop Pro - Release Notes
+-----------------------------------🚀 Auto Shop Pro - Release Notes----------------------------------
 Update: The "Shop Floor & Payroll" Expansion (v2.0)
 
 🛠️ The Technician Workflow
@@ -78,8 +99,7 @@ Smooth Scrolling: Fixed a global UI bug where hovering over a DataGrid or TextBo
 
 Check-In Mileage Trap: The Work Order editor now dynamically prompts the service writer to enter the check-in mileage the very first time they open a newly created ticket.
 
----------------------------------------------------------------------
-🚀 Auto Shop Pro - Changelog v1.3.0 (The UX & Consolidation Update)
+---------------------------------🚀 Auto Shop Pro - Changelog v1.3.0 (The UX & Consolidation Update)------------------------------------
 🧹 UI/UX Polish & Screen Consolidation
 Financial Command Center: Completely merged the FinancialDashboardView and TaxAccountingReportView into a single, highly powerful "Accounting" tab. It now displays high-level KPI cards, raw expense ledgers, and tax breakdowns all dynamically driven by a single date-range selector.
 
@@ -105,8 +125,7 @@ Interactive Help Dashboard: Added a multi-tab, side-by-side digital manual acces
 
 Comprehensive Documentation: Added step-by-step guides for everything from writing a Work Order and logging Expenses, to clearing Windows 10 "Password Protected Sharing" blocks.
 
----------------------------------------------------------------------
-🚀 Auto Shop Pro - Changelog v1.2.0 (The Documentation & Network Polish Update)
+---------------------------------🚀 Auto Shop Pro - Changelog v1.2.0 (The Documentation & Network Polish Update)------------------------------------
 🧠 Application Stability & Architecture
 Single Instance Lock (Mutex): Implemented a core application lock to prevent multiple instances of Auto Shop Pro from running simultaneously on the same computer, preventing database collisions and memory crashes.
 
