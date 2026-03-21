@@ -1,3 +1,11 @@
+--------------------------------🛠️ Auto Shop Pro - Patch Notes-------------------------------------
+Update: Hotfix v2.4.1
+
+⚡ Bug Fixes & Workflow Patches
+Auto-Select New Vehicles on Work Orders: Fixed a workflow interruption on the WorkOrderEditorView. Previously, when a writer clicked "+ New Vehicle" from an active Work Order, the dropdown would remain blank after saving, forcing the user to manually search for the newly created profile.
+
+The Fix: The Work Order now actively listens for the AddVehicleWindow to close. Upon a successful save, it instantly refreshes its internal memory, grabs the newest Vehicle ID from the database, and automatically locks it into the active repair ticket.
+
 --------------------------------🚀 Auto Shop Pro - Release Notes-------------------------------------
 Update: The "Command Center & QOL" Expansion (v2.4)
 
