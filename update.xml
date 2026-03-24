@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-    <version>2.6</version>
-    <url>https://github.com/scottsautomotive/ShopManagerUpdates/releases/download/v2.6/autoshopmanager_v2.6.zip</url>
+    <version>2.6.1</version>
+    <url>https://github.com/scottsautomotive/ShopManagerUpdates/releases/download/v2.6.1/autoshopmanager_v2.6.1.zip</url>
     <changelog>https://raw.githubusercontent.com/scottsautomotive/ShopManagerUpdates/refs/heads/main/ChangeLog.txt</changelog>
     <mandatory>false</mandatory>
 </item>
