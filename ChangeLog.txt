@@ -1,4 +1,42 @@
 --------------------------------🚀 Auto Shop Pro - Release Notes--------------------------------
+Update: The "Lean Shop & Accounting" Patch (v2.6.0)
+
+💰 Financials & Cost Tracking
+Work Order Cost Protection: Work Orders now permanently lock in the wholesale UnitCost of parts at the exact moment they are added. This guarantees historical profit margins remain 100% accurate even if vendor prices increase months later.
+
+Auto-Markup Engine: Changing the wholesale cost of a part on a Work Order now automatically calculates and applies the correct Retail Price based on your shop's custom markup tiers.
+
+Margin Safety Net: Service Writers are now physically prevented from accidentally saving a part's retail price below its wholesale cost.
+
+Technician Blindfold: The new Cost columns, pricing totals, and financial summaries are completely hidden from the Technician UI.
+
+📦 Just-In-Time (JIT) Inventory Pivot
+The "JIT" Accounting Model: We have completely overhauled how parts are handled. The bloated "Master Inventory" requirement has been removed.
+
+"Order Online" Workflow: Parts ordered from web portals (Autozone/Oriellys, etc.) drop directly onto the Work Order. When the invoice is finalized, the system automatically bundles these internet parts and logs them as a single, clean "Job Specific" Expense in your ledger.
+
+"Add from Stock" Workflow: Added a dedicated button to pull from your physical shelf stock. When these parts are invoiced, the system deducts the quantity from the shelf without creating duplicate expenses.
+
+⚙️ Settings & UI Overhaul
+Modern Tabbed Settings: The Shop Settings screen has been completely rebuilt from the ground up using a modern, responsive, 6-tab layout. This eliminates "scroll-traps" and makes finding settings instantaneous.
+
+Expanded Shop Details: The system now captures highly granular shop data (Address Line 2, City, State, Zip, Fax, Email, Website) to support future automated customer communications and better-formatted invoices.
+
+New Bulk Inventory Manager: The old "Parts & Vendors" sidebar screen has been retired. In its place is a lightning-fast Bulk Inventory Manager tucked inside the Settings tab. Receiving a case of oil or filters here instantly logs the purchase as a Shop Expense and updates your shelf quantities.
+
+New Vendor & Guide Manager: Added a dedicated tab in Settings to manage your external portal connections (Parts Vendors & Labor Guides).
+
+🔧 Labor & Canned Jobs
+Canned Job Manager: Standard/Canned jobs have been moved out of the daily workflow and safely tucked into the Settings tab for easy editing and pricing updates.
+
+Smart VIN Labor Improvements: Service writers can now directly Edit or permanently Delete auto-learned VIN-specific labor operations from the selection screen to quickly fix typos. Manual labor entries now automatically "learn" and attach themselves to the active vehicle's chassis prefix.
+
+🔄 System & Stability
+Silent Background Updater: The application now features an invisible background timer that pings the server for updates every 60 minutes. Shop computers left running all week will now automatically catch and prompt for new updates without needing to be restarted.
+
+Ghost Lock Sweeper: Added a startup safety protocol that automatically detects and clears any Work Orders that were accidentally left "Locked" by the local computer due to a power outage or crash.
+
+--------------------------------🚀 Auto Shop Pro - Release Notes--------------------------------
 Update: The "Shop Floor & Workflow" Patch (v2.5.0)
 
 📦 Inventory & Procurement
