@@ -1,3 +1,25 @@
+--------------------------------🛠️ Auto Shop Pro - Patch Notes-------------------------------------
+Update: The "JIT Stabilization & Cloaking" Patch (v2.6.1)
+
+📦 Bulk Inventory Enhancements
+Inline Editing: Added the ability to instantly Edit and Delete Bulk Inventory items directly from the Settings screen.
+
+Expense Safety: Correcting a typo or updating the quantity of an existing bulk item will no longer trigger a duplicate "Shop Supply" expense on the accounting ledger.
+
+Safe Deletion: Deleting an old bulk item from the system will now safely unlink it from historical work orders instead of triggering a database crash, preserving your accounting history.
+
+🛡️ Supplier Portal & Integrations
+Advanced Web-Cloaking: Engineered a custom security bypass for the Supplier Portal. The embedded browser now successfully spoofs consumer-grade telemetry and disables the hidden navigator.webdriver flag. This successfully bypasses AutoZone's aggressive "Ad-Blocker/Bot" detection walls, allowing seamless part sourcing.
+
+🔧 Work Order & Historical Data Stability
+The "Data Bridge" Migration: Successfully migrated thousands of historical Work Orders to the new JIT architecture. Historical parts now have their PartNumber permanently written directly onto the invoice receipt, guaranteeing that old tickets will never lose their data even if the master inventory is wiped.
+
+Internet Part Tracking: Parts imported directly from the web via the "Smart Grabber" now successfully save their distinct Part Numbers directly to the active Work Order.
+
+UI Crash Fix: Resolved an underlying data-binding crash (Two-way binding requires Path or XPath) caused by Work Orders looking for parts on a master shelf that no longer exists.
+
+Ghost Lock Fix: Fixed an issue where double-clicking a vehicle's past history from within an active Work Order would bypass the safety protocols and permanently lock the current ticket. The system now forces a clean save and unlock before opening the historical file.
+
 --------------------------------🚀 Auto Shop Pro - Release Notes--------------------------------
 Update: The "Lean Shop & Accounting" Patch (v2.6.0)
 
