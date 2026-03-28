@@ -1,4 +1,31 @@
 ----------------🚀 Auto Shop Pro - Release Notes-----------------
+Update: The "Touch-First & Kanban Scheduling" Update (v2.9.0)
+
+📅 All-New 7-Day Schedule Board
+Kanban-Style Agenda: Completely ripped out the old scheduling spreadsheet. Replaced it with a gorgeous, dynamic 7-day "Week-at-a-Glance" board. The board automatically generates columns for the next 7 days based on the date you select on the calendar.
+
+Minimalist Touch Cards: Appointments now appear as clean, minimalist cards showing only the Time and Customer Name, maximizing screen real estate and making it easy to read the day's schedule from across the front desk.
+
+The "Ghost Trap": Worried about forgetting to mark someone as a No-Show yesterday? The system now forcefully pins any missed/past-due appointments to the top of your "Today" column with a warning icon (⚠️) until they are properly dealt with.
+
+Interactive Appointment Pop-ups: Tapping an appointment card now opens a dedicated Details Window featuring massive, touch-friendly action buttons: Check In, Edit, No-Show, and Cancel. You can now read full customer concern notes without them getting cut off in a tiny grid cell.
+
+Edit Existing Appointments: Added full support for modifying existing appointments. You can now seamlessly change dates, times, vehicles, or notes without having to delete and recreate the appointment.
+
+📱 The "Death of the DataGrid" (Responsive Card UI)
+DataGrids are terrible for touchscreens, so we purged them entirely from the Customer, Vehicle, and Work Order list views. Everything is now powered by a responsive, auto-wrapping Card Grid system.
+
+Customer Contact Cards: Customers are now displayed as digital contact cards. Easily tap anywhere on a massive card to open their profile. "Alt Phone" rows now dynamically hide themselves if the customer doesn't have one to save space. Cards are strictly alphabetized by Last Name, then First Name.
+
+Digital Registration Cards (Vehicles): The Vehicle List has been redesigned to look like digital registration cards. Features a massive Make/Model header, a monospaced VIN block in the center, and the owner/last-visit stats at the bottom. Auto-sorted perfectly by Make ➔ Model ➔ Year (Newest First).
+
+Digital Clipboards (Work Orders): Work orders are now displayed as sleek clipboards. The RO Number is front-and-center.
+
+Dynamic Status Badges: Replaced boring text statuses on Work Orders with vibrant, color-coded pill badges (e.g., Green for Invoiced, Blue for In Progress, Orange for On Hold). Service Writers can now understand the state of the entire shop with a single glance.
+
+Fat-Finger Safety: Moved all "Delete" and "Edit" buttons to isolated corners of the new cards to prevent accidental taps, and maintained full Master PIN security where required.
+
+----------------🚀 Auto Shop Pro - Release Notes-----------------
 Update: The "Touchscreen & Tech Workflow" Update (v2.8.0)
 
 👆 Global Touchscreen Optimization (Fat-Finger Proofing)
