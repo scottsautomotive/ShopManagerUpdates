@@ -1,3 +1,7 @@
+----------------🚀 Auto Shop Pro - Version 3.0.1.1 (hotfix)-----------------
+🎨 UI & Navigation Fix
+Dynamic Status Toggles: Toggles now remember selection when leaving work order list view.
+
 -------🚀 Release Notes: Auto Shop Pro - Version 3.0.1 (Patch)-------
 This update brings critical quality-of-life UI improvements to the Work Order list, fixes a sorting bug, and adds a strict security trap to protect the invoicing workflow.
 
