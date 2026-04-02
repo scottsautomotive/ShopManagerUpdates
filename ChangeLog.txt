@@ -1,3 +1,7 @@
+----------------🚀 Auto Shop Pro - Release Notes-----------------
+🐛 Bug Fixes & Code Health
+Removed Ivoiced from Status in Work Order Editor. This prevents work orders from being locked by mistake.
+
 -------------🚀 Release Notes: Auto Shop Pro - Version 3.0--------------
 This major update focuses on drastically improving the speed of the Service Writer workflow, eliminating unnecessary clicks, and bringing a modern, seamless experience to Work Order creation and Just-In-Time (JIT) part ordering.
 
