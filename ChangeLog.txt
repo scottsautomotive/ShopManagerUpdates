@@ -1,3 +1,32 @@
+----------------🚀Auto Shop Pro - Version 3.1.0 (The Intelligence Update)----------------
+This major update introduces predictive AI for your service writers, automated DOM scraping for parts ordering, and a suite of robust tools for handling historical data migration.
+
+🧠 Predictive Service Intelligence
+Smart Alert Banner: Added a real-time, in-memory intelligence engine to the Work Order Editor. When a Service Writer or Tech enters notes, the system automatically parses the text, extracts significant keywords, and cross-references them against the vehicle's last 5 finalized invoices.
+
+Comeback Prevention: If the engine detects overlapping issues (e.g., a "battery" issue today when a "battery" was replaced 3 months ago), a high-visibility red banner alerts the writer instantly, preventing duplicate diagnostics or missed warranty work.
+
+Custom AI Ignore List: Added a new "Smart Alert Ignore List" to the Shop Details settings tab. Managers can easily add or remove custom slang or common shop terminology to train the intelligence engine and prevent false alarms.
+
+⚡ Automated Vendor Scraping
+Targeted DOM Extraction: Built a single-click auto-scraper directly into the WebView2 SupplierPortalWindow.
+
+Bot-Protection Bypass: By running the script natively inside an authenticated browser session, the system can instantly extract Part Numbers, Part Names, and Shop Cost from AutoZone Pro and FirstCall Online without triggering Enterprise Web Application Firewalls (like Cloudflare or Akamai).
+
+🕰️ Historical Data & Backdating Tools
+Sync RO# Sequence Generator: Added a dedicated 🔄 Sync RO# button to the Work Order Editor. Service Writers can now backdate a ticket, click sync, and the database will automatically calculate and assign the correct historical RO sequence for that specific past date.
+
+Preserved Historical Finalization: The "Finalize Invoice" sequence was rewritten to respect historical "Date Out" values rather than overwriting them with today's date, ensuring accurate financial reporting for migrated tickets.
+
+Admin Date Override (Surgical Edit): Added a hidden edit tool (✏️) to locked, finalized invoices. Authorized users (requires Master PIN) can now surgically correct a typo in a finalized Date Out/Invoice Date without duplicating parts deductions or internet expenses on the ledger.
+
+🛠️ Bug Fixes & System Stability
+Tab-Switching Crash Resolved: Fixed a critical Sequence contains no elements LINQ crash. The background Auto-Save engine will no longer crash the program if a user navigates away from an empty draft that the system is trying to clean up.
+
+Safe Employee Termination: Resolved a FOREIGN KEY constraint database error. Deleting an employee now safely severs their ties to historical Work Order Labor items and purges their Time Punches before removal, preventing database lockups.
+
+Formatting & Ambiguity Cleanup: Fixed a namespace collision (Colors) between QuestPDF and OpenXml that was blocking invoice generation, and upgraded the keyword extraction engine to properly handle hidden carriage returns (\r\n) in multi-line text boxes.
+
 ----------------🚀 Auto Shop Pro - Version 3.0.2.1 (hotfix)-----------------
 🐛 Bug Fixes
 Work Order Creation: Fixed error causing crash when user creates a new work order and clicks a sidebar tab while in the work order editor view without first saving the work order.
